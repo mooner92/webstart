@@ -3,17 +3,27 @@
     <head>
         <meta charset="UTF-8">
         <title>Login </title>
+        <style>
+            h1{
+                color: red; text-align: center;
+            }
+            .login_inputs {
+                font-size: 25px;
+            }
+            #btn_login{
+                font-size: 25px; width: 100px; height: 30px;
+            }
+        </style>
     </head>
     <body>
-        <h1 style="color: red; text-align: center;">Login</h1>
+        <h1>Login</h1>
         <form>
-            ID : <input type="text" style="font-size: 25px;">
+            ID : <input class =  "login_inputs" type="text">
             <br>
-            PW : <input type="password" style="font-size: 25px;">
+            PW : <input class =  "login_inputs" type="password">
             <br>
             <br>
-            <input type="button" value="login" 
-            style="font-size: 25px; width: 100px; height: 30px;">
+            <input id = "btn_login" type="button" value="login">
         </form>
     </body>
 </html>
