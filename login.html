@@ -9,13 +9,25 @@
     <body>
         <h1>Login</h1>
         <form>
-            ID : <input class =  "login_inputs" type="text">
+            ID : <input id="txt_id" class =  "login_inputs" type="text">
             <br>
             PW : <input class =  "login_inputs" type="password">
             <br>
             <br>
             <input id = "btn_login" type="button" value="login" 
-                onclick="alert('clicked')">
+                onclick="popId()">
         </form>
+        <script>
+            //ID란에 입력된 값을 팝업창에 띄우기
+            function popId() {
+                alert(document.getElementById('txt_id').value);
+            }
+            //나만의 함수 만들고 호출하기
+            function myfunction() {
+                alert('clicked1');
+                alert('clicked2');
+                alert('clicked3');
+            }
+        </script>
     </body>
 </html>
