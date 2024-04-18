@@ -20,12 +20,13 @@
         <script>
             //ID란에 입력된 값을 팝업창에 띄우기
             function popId() {
-                if (!document.getElementById('txt_id').value){
+                let userid = document.getElementById('txt_id').value;
+                if (!userid){
                     //document.getElementById('txt_id').value=="" 이와 if문의 내용은 동일함
                     alert('아이디를 입력해주세요.')
                 }
                 else
-                    alert(document.getElementById('txt_id').value);
+                    alert(userid);
             }
             //나만의 함수 만들고 호출하기
             function myfunction() {
